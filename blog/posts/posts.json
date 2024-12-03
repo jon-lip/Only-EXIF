@@ -1,0 +1,209 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "OnlyEXIF Blog",
+    "description": "Guides and articles about image privacy, metadata, and digital security.",
+    "url": "https://onlyexif.com/blog",
+    "posts": [
+        {
+            "@type": "BlogPosting",
+            "id": 9,
+            "title": "Camera Clock Sync: The Secret to Perfect Multi-Photographer Wedding Albums",
+            "slug": "2024-02-28-wedding-photography-camera-clock-sync.html",
+            "date": "2024-02-28",
+            "readTime": "3 min read",
+            "category": "Professional Guide",
+            "excerpt": "Learn why synchronizing camera clocks across your photography team is crucial for creating seamless wedding albums, and how to implement this essential workflow practice."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 8,
+            "title": "Wedding Photography Workflow: Leveraging EXIF Data for Better Results",
+            "slug": "2024-02-26-wedding-photography-metadata-workflow.html",
+            "date": "2024-02-26",
+            "readTime": "4 min read",
+            "category": "Professional Guide",
+            "excerpt": "Discover how professional wedding photographers can use image metadata to streamline their workflow, improve consistency, and deliver better results to their clients."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 7,
+            "title": "School Photo Monitoring: Privacy vs Safety in the Digital Age",
+            "slug": "2024-02-24-school-photo-monitoring-student-privacy.html",
+            "date": "2024-02-24",
+            "readTime": "3 min read",
+            "category": "Privacy Guide",
+            "excerpt": "Discover how schools use metadata to track student photo sharing, the privacy implications for students, and how to balance safety with personal privacy in educational settings."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 6,
+            "title": "How Image Metadata Helped Document Syrian War Crimes",
+            "slug": "2024-02-22-metadata-syrian-conflict-investigation.html",
+            "date": "2024-02-22",
+            "readTime": "4 min read",
+            "category": "Case Study",
+            "excerpt": "Discover how investigators used EXIF data and GPS coordinates from photos to verify and document attacks in the Syrian conflict, demonstrating metadata's crucial role in human rights investigations."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 5,
+            "title": "The Meme That Got Bob Fired: A Metadata Horror Story",
+            "slug": "2024-02-20-metadata-privacy-fail-meme-creator.html",
+            "date": "2024-02-20",
+            "readTime": "3 min read",
+            "category": "Privacy Story",
+            "excerpt": "Bob thought he was anonymous while trolling online, until his Canva-created meme revealed his real name in its metadata. A cautionary tale about checking your image data before posting."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 4,
+            "title": "The Hidden Benefits of Image Metadata: More Than Just Privacy Concerns",
+            "slug": "2024-02-18-benefits-of-image-metadata-organization.html",
+            "date": "2024-02-18",
+            "readTime": "4 min read",
+            "category": "Feature Guide",
+            "excerpt": "While privacy is crucial, image metadata also offers powerful benefits for photographers, archivists, and everyday users. Learn how to leverage EXIF data to your advantage."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 3,
+            "title": "GPS Data in Your Photos: A Hidden Privacy Risk",
+            "slug": "2024-02-16-gps-location-data-photo-privacy-risk.html",
+            "date": "2024-02-16",
+            "readTime": "3 min read",
+            "category": "Privacy Guide",
+            "excerpt": "Your photos might be revealing your exact location without you knowing it. Learn how GPS data in images works and how to protect your privacy with OnlyEXIF."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 2,
+            "title": "How Social Media Platforms Handle Your Photo Metadata",
+            "slug": "2024-02-14-social-media-photo-metadata-privacy.html",
+            "date": "2024-02-14",
+            "readTime": "4 min read",
+            "category": "Privacy Guide",
+            "excerpt": "Discover how platforms like Instagram, Facebook, and X (formerly Twitter) process your photo metadata, and learn how to protect your privacy before sharing images online."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 1,
+            "title": "What is Image Metadata? A Beginner's Guide to Understanding EXIF Data",
+            "slug": "2024-02-12-what-is-image-metadata-beginners-guide.html",
+            "date": "2024-02-12",
+            "readTime": "3 min read",
+            "category": "Beginner Guide",
+            "excerpt": "Ever wonder what your photos are secretly saying about you? Learn the basics of image metadata and how to protect your privacy when sharing photos online."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 10,
+            "title": "The Dark Side of Photo Contests: Hidden Metadata Disqualifications",
+            "slug": "2024-03-01-photo-contest-metadata-cheating.html",
+            "date": "2024-03-01",
+            "readTime": "4 min read",
+            "category": "Industry Insights",
+            "excerpt": "Discover how competition judges use image metadata to catch rule-breakers, from spotting stolen photos to verifying submission dates. A behind-the-scenes look at photography contest verification."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 11,
+            "title": "Lost Camera Stories: How Metadata Reunited Photographers with Their Gear",
+            "slug": "2024-03-03-lost-camera-metadata-recovery-stories.html",
+            "date": "2024-03-03",
+            "readTime": "3 min read",
+            "category": "Success Stories",
+            "excerpt": "From beaches to mountain trails, discover incredible true stories of photographers who recovered their lost equipment thanks to image metadata. A collection of modern-day digital detective stories."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 12,
+            "title": "Digital Footprints: What Snowden Taught Us About Metadata Privacy",
+            "slug": "2024-03-25-snowden-metadata-privacy-lessons.html",
+            "date": "2024-03-25",
+            "readTime": "4 min read",
+            "category": "Privacy Analysis",
+            "excerpt": "From NSA revelations to modern privacy concerns, explore how Edward Snowden's leaks changed our understanding of metadata surveillance and what it means for your digital security."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 13,
+            "title": "NFT Art & Metadata: Protecting Your Digital Creations",
+            "slug": "2024-04-02-nft-art-metadata-protection.html",
+            "date": "2024-04-02",
+            "readTime": "3 min read",
+            "category": "Digital Art",
+            "excerpt": "From minting NFTs to protecting your digital art, learn how metadata plays a crucial role in establishing authenticity and ownership in the crypto art world."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 14,
+            "title": "Too Much Information: Jenna's Viral Photo Disaster",
+            "slug": "2024-04-05-oversharing-metadata-privacy-lessons.html",
+            "date": "2024-04-05",
+            "readTime": "3 min read",
+            "category": "Privacy Stories",
+            "excerpt": "When Jenna decided to share some 'tasteful' photos online, she didn't realize she was exposing way more than just skin. A cautionary tale about metadata and privacy in the age of digital flirtation."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 15,
+            "title": "Metadata in True Crime: How Digital Photos Help Solve Cold Cases",
+            "slug": "2024-05-15-metadata-true-crime-cold-cases.html",
+            "date": "2024-05-15",
+            "readTime": "2 min read",
+            "category": "Investigation",
+            "excerpt": "From decades-old murders to missing persons, discover how investigators are using photo metadata to crack cold cases and bring closure to families. A deep dive into digital forensics and justice."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 16,
+            "title": "From EXIF to AI: The Evolution of Image Metadata (1995-2025)",
+            "slug": "2024-06-25-history-of-image-metadata-evolution.html",
+            "date": "2024-06-25",
+            "readTime": "4 min read",
+            "category": "Technical History",
+            "excerpt": "From the first digital cameras to modern AI-powered devices, explore how image metadata has evolved over three decades and shaped modern photography."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 17,
+            "title": "Understanding Image Metadata Types: EXIF, XMP, IPTC and Beyond",
+            "slug": "2024-08-25-understanding-image-metadata-types.html",
+            "date": "2024-08-25",
+            "readTime": "4 min read",
+            "category": "Technical Guide",
+            "excerpt": "A comprehensive guide to the different types of image metadata formats, their purposes, and how they work together in modern digital photography."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 18,
+            "title": "Canon vs Nikon: The Metadata Showdown",
+            "slug": "2024-10-13-canon-nikon-metadata-comparison.html",
+            "date": "2024-10-13",
+            "readTime": "4 min read",
+            "category": "Technical Comparison",
+            "excerpt": "A deep dive into how Canon and Nikon handle image metadata differently, from proprietary tags to custom fields. Essential knowledge for photographers managing mixed-brand workflows."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 19,
+            "title": "Why OnlyEXIF? The Story Behind Our Privacy-First Tool",
+            "slug": "2024-12-01-why-onlyexif-origin-story.html",
+            "date": "2024-12-01",
+            "readTime": "3 min read",
+            "category": "Company Story",
+            "excerpt": "From frustration to solution: How the need for a simple, private, and free metadata tool led to the creation of OnlyEXIF. Our commitment to privacy and accessibility in the digital age."
+        },
+        {
+            "@type": "BlogPosting",
+            "id": 20,
+            "title": "10 Times Image Metadata Changed History",
+            "slug": "2024-12-03-image-metadata-historical-events.html",
+            "date": "2024-12-03",
+            "readTime": "4 min read",
+            "category": "Historical Analysis",
+            "excerpt": "From war crimes to political scandals, discover ten remarkable cases where hidden photo metadata helped expose truth, solve crimes, and shape world events."
+        }
+    ]
+} 

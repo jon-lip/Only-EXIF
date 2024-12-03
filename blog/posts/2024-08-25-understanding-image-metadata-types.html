@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Image Metadata Types: EXIF, XMP, IPTC and Beyond - OnlyEXIF Blog</title>
+    
+    <meta name="description" content="A comprehensive guide to the different types of image metadata formats, their purposes, and how they work together in modern digital photography.">
+    <meta name="keywords" content="EXIF data, XMP metadata, IPTC metadata, image metadata types, digital photography, metadata formats, metadata standards">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Standard meta tags structure -->
+    <link rel="canonical" href="https://onlyexif.com/blog/posts/2024-08-25-understanding-image-metadata-types.html" />
+    
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2024-08-25">
+    <meta property="article:author" content="OnlyEXIF">
+    <meta property="article:section" content="Technical Guide">
+    <meta property="article:reading_time" content="4">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://onlyexif.com/blog/posts/2024-08-25-understanding-image-metadata-types.html">
+    <meta property="og:title" content="Understanding Image Metadata Types: EXIF, XMP, IPTC and Beyond">
+    <meta property="og:description" content="A comprehensive guide to the different types of image metadata formats, their purposes, and how they work together in modern digital photography.">
+    <meta property="og:image" content="https://onlyexif.com/social-preview.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Standard navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="https://onlyexif.com" class="nav-logo">
+                <img src="../assets/onlyexif-blog-logo.png" alt="OnlyEXIF Logo">
+            </a>
+            <div class="nav-links">
+                <a href="https://www.onlyexif.com/blog" class="btn btn-outline">Blog</a>
+                <a href="https://onlyexif.com" class="btn btn-primary">Open App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="blog-container">
+        <article class="blog-article">
+            <header class="article-header">
+                <a href="https://www.onlyexif.com/blog" class="btn btn-outline">
+                    ← Back to Blog
+                </a>
+                <h1 class="article-title">
+                    Understanding Image Metadata Types: EXIF, XMP, IPTC and Beyond
+                </h1>
+                <div class="article-meta">
+                    <time>August 25, 2024</time>
+                    <span>•</span>
+                    <span>4 min read</span>
+                    <span>•</span>
+                    <span>Technical Guide</span>
+                </div>
+            </header>
+
+            <div class="content">
+                <p>
+                    When you take a digital photo, your camera doesn't just capture an image - it creates a complex package of information using multiple metadata formats. Each format serves a specific purpose, from recording technical camera settings to managing copyright information. Let's break down these formats and understand how they work together.
+                </p>
+
+                <h2>EXIF (Exchangeable Image File Format)</h2>
+                <p>
+                    EXIF is the most basic and widely-used metadata format. Created by JEIDA in 1995, it records technical camera information:
+                </p>
+                <ul>
+                    <li>Camera make and model</li>
+                    <li>Aperture, shutter speed, and ISO settings</li>
+                    <li>Date and time of capture</li>
+                    <li>GPS coordinates (if enabled)</li>
+                    <li>Original and modified timestamps</li>
+                </ul>
+
+                <h2>XMP (Extensible Metadata Platform)</h2>
+                <p>
+                    Developed by Adobe in 2001, XMP is a more flexible format that uses XML:
+                </p>
+                <ul>
+                    <li>Editing history and adjustments</li>
+                    <li>Copyright and licensing information</li>
+                    <li>Keywords and descriptions</li>
+                    <li>Rating systems and flags</li>
+                    <li>Custom metadata fields</li>
+                </ul>
+
+                <h2>IPTC (International Press Telecommunications Council)</h2>
+                <p>
+                    Originally created for news organizations, IPTC handles descriptive metadata:
+                </p>
+                <ul>
+                    <li>Photographer credits</li>
+                    <li>Copyright notices</li>
+                    <li>Image descriptions</li>
+                    <li>Location names</li>
+                    <li>Usage terms</li>
+                </ul>
+
+                <h2>ICC Profiles</h2>
+                <p>
+                    ICC profiles manage color information:
+                </p>
+                <ul>
+                    <li>Color space definitions</li>
+                    <li>Display calibration data</li>
+                    <li>Color management settings</li>
+                    <li>Device-specific color profiles</li>
+                    <li>Output intent information</li>
+                </ul>
+
+                <h2>How They Work Together</h2>
+                <p>
+                    Modern image files often contain multiple metadata formats simultaneously:
+                </p>
+                <ul>
+                    <li>EXIF handles technical camera data</li>
+                    <li>XMP manages editing and creative information</li>
+                    <li>IPTC covers rights and usage details</li>
+                    <li>ICC ensures consistent color reproduction</li>
+                </ul>
+
+                <h2>Metadata Hierarchy</h2>
+                <p>
+                    When conflicts occur between formats, most software follows this priority:
+                </p>
+                <ul>
+                    <li>XMP (newest standard, most flexible)</li>
+                    <li>IPTC (industry standard for rights)</li>
+                    <li>EXIF (camera-generated data)</li>
+                    <li>ICC (color management only)</li>
+                </ul>
+
+                <h2>Common Issues</h2>
+                <p>
+                    Understanding metadata types helps avoid common problems:
+                </p>
+                <ul>
+                    <li>Format compatibility conflicts</li>
+                    <li>Data loss during conversion</li>
+                    <li>Duplicate or contradictory information</li>
+                    <li>Privacy implications of each format</li>
+                    <li>Software handling differences</li>
+                </ul>
+
+                <h2>Best Practices</h2>
+                <p>
+                    To manage metadata effectively:
+                </p>
+                <ul>
+                    <li>Use consistent metadata workflows</li>
+                    <li>Verify metadata integrity after editing</li>
+                    <li>Back up original metadata</li>
+                    <li>Strip sensitive data before sharing</li>
+                    <li>Document your metadata standards</li>
+                </ul>
+
+                <h2>Conclusion</h2>
+                <p>
+                    Understanding these different metadata types isn't just technical trivia - it's essential for managing digital assets effectively. Whether you're a photographer protecting your copyright, a privacy advocate managing personal information, or just someone who wants to understand their photos better, knowing how these formats work together helps you make informed decisions about your digital images.
+                </p>
+            </div>
+
+            <footer class="article-footer">
+                <a href="https://www.onlyexif.com/blog" class="btn btn-primary">More articles</a>
+            </footer>
+        </article>
+    </main>
+
+    <div class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Protecting Your Privacy</h2>
+                <p>A free, open-source tool to help keep your personal data private</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://onlyexif.com" class="btn btn-primary">
+                        <svg class="social-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+                        </svg>
+                        Analyze Image
+                    </a>
+                    <a href="https://github.com/jon-lip/onlyexif" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-outline btn-outline-white">View Source</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>OnlyEXIF</h3>
+                    <p>Privacy-first metadata analysis</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://onlyexif.com">Home</a>
+                    <a href="https://www.onlyexif.com/blog">Blog</a>
+                    <a href="https://github.com/jon-lip/onlyexif">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 OnlyEXIF • Client-side processing only</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyEXIF Blog - Privacy and Image Metadata Guides</title>
+    
+    <meta name="description" content="Learn about image privacy, EXIF data, and how to protect your personal information when sharing photos online.">
+    <meta name="keywords" content="EXIF data, image metadata, photo privacy, digital security, image analysis">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onlyexif.com/blog">
+    <meta property="og:title" content="OnlyEXIF Blog - Privacy and Image Metadata Guides">
+    <meta property="og:description" content="Learn about image privacy, EXIF data, and how to protect your personal information when sharing photos online.">
+    <meta property="og:image" content="https://onlyexif.com/social-preview.png">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    <!-- Custom styles -->
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="https://onlyexif.com" class="nav-logo">
+                <img src="./assets/onlyexif-blog-logo.png" alt="OnlyEXIF Logo">
+            </a>
+            <div class="nav-links">
+                <a href="https://www.onlyexif.com/blog" class="btn btn-outline">Blog</a>
+                <a href="https://onlyexif.com" class="btn btn-primary">Open App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="blog-container">
+        <div class="blog-header">
+            <h1 class="blog-title">OnlyEXIF Blog</h1>
+            <p class="blog-description">Guides and articles about image privacy, metadata, and digital security. Use <a href="https://onlyexif.com">OnlyEXIF</a> to protect your privacy when sharing photos online.</p>
+        </div>
+
+        <div class="featured-articles">
+            <a href="https://www.onlyexif.com/blog/posts/2024-02-12-what-is-image-metadata-beginners-guide.html" class="featured-card">
+                <div class="featured-label">Start Here</div>
+                <h2 class="post-title">What is Image Metadata?</h2>
+                <p class="post-excerpt">Learn the basics of EXIF data and how it affects your privacy when sharing photos online.</p>
+            </a>
+
+            <a href="https://www.onlyexif.com/blog/posts/2024-02-16-gps-location-data-photo-privacy-risk.html" class="featured-card">
+                <div class="featured-label">Must Read</div>
+                <h2 class="post-title">GPS Data Privacy Risks</h2>
+                <p class="post-excerpt">Discover how location data in your photos could be revealing more than you think.</p>
+            </a>
+
+            <a href="https://www.onlyexif.com/blog/posts/2024-02-18-benefits-of-image-metadata-organization.html" class="featured-card">
+                <div class="featured-label">Featured</div>
+                <h2 class="post-title">Benefits of Metadata</h2>
+                <p class="post-excerpt">Learn how to use metadata to improve your photography and organization.</p>
+            </a>
+        </div>
+
+        <div id="posts-grid" class="posts-grid">
+            <!-- Posts will be inserted here -->
+        </div>
+    </main>
+
+    <div class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Protecting Your Privacy</h2>
+                <p>A free, open-source tool to help keep your personal data private</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://onlyexif.com" class="btn btn-primary">
+                        <svg class="social-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+                        </svg>
+                        Analyze Image
+                    </a>
+                    <a href="https://github.com/jon-lip/onlyexif" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-outline btn-outline-white">View Source</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>OnlyEXIF</h3>
+                    <p>Privacy-first metadata analysis</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://onlyexif.com">Home</a>
+                    <a href="https://www.onlyexif.com/blog">Blog</a>
+                    <a href="https://github.com/jon-lip/onlyexif">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 OnlyEXIF • Client-side processing only</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function loadPosts() {
+            try {
+                const response = await fetch('./posts/posts.json');
+                const data = await response.json();
+                
+                const postsGrid = document.getElementById('posts-grid');
+                
+                data.posts
+                    .sort((a, b) => b.id - a.id) // Sort by ID, newest first
+                    .forEach(post => {
+                        const date = new Date(post.date).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+
+                        const postCard = `
+                            <a href="https://www.onlyexif.com/blog/posts/${post.slug}" class="post-card">
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <time>${date}</time>
+                                        <span>•</span>
+                                        <span>${post.category}</span>
+                                    </div>
+                                    <h2 class="post-title">${post.title}</h2>
+                                    <p class="post-excerpt">${post.excerpt}</p>
+                                </div>
+                            </a>
+                        `;
+                        
+                        postsGrid.innerHTML += postCard;
+                    });
+            } catch (error) {
+                console.error('Error loading posts:', error);
+                document.getElementById('posts-grid').innerHTML = `
+                    <div class="error-message">
+                        Unable to load blog posts. Please try again later.
+                    </div>
+                `;
+            }
+        }
+
+        // Load posts when the page loads
+        loadPosts();
+    </script>
+</body>
+</html>
