@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: pan-y pinch-zoom;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-primary {
+    @apply btn bg-black text-white hover:bg-gray-800 
+           active:transform active:scale-[0.98];
+  }
+  
+  .btn-outline {
+    @apply btn border-2 border-gray-200 hover:border-gray-300 
+           hover:bg-gray-50;
+  }
+
+  .scroll-progress {
+    @apply fixed top-0 left-0 right-0 h-[2px] bg-black/10 z-50;
+  }
+  
+  .scroll-progress::after {
+    content: '';
+    @apply absolute top-0 left-0 h-full bg-black transition-all duration-150;
+    width: var(--scroll-percent, 0%);
+  }
+}
+
+@layer utilities {
+  @keyframes progress {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .animate-progress {
+    animation: progress 2s linear infinite;
+  }
+}

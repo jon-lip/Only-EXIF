@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Image Metadata? A Beginner's Guide to Understanding EXIF Data - OnlyEXIF Blog</title>
+    
+    <meta name="description" content="Ever wonder what your photos are secretly saying about you? Learn the basics of image metadata and how to protect your privacy when sharing photos online.">
+    <meta name="keywords" content="EXIF data basics, what is metadata, photo metadata guide, image EXIF data, metadata privacy, digital photo metadata, metadata explanation, EXIF tutorial, photo privacy basics, metadata for beginners, image data guide, photo information, camera metadata, photo EXIF data, metadata 101">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://onlyexif.com/blog/posts/2024-02-12-what-is-image-metadata-beginners-guide.html" />
+    
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2024-02-12">
+    <meta property="article:author" content="OnlyEXIF">
+    <meta property="article:section" content="Beginner Guide">
+    <meta property="article:reading_time" content="6">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://onlyexif.com/blog/posts/2024-02-12-what-is-image-metadata-beginners-guide.html">
+    <meta property="og:title" content="What is Image Metadata? A Beginner's Guide to Understanding EXIF Data">
+    <meta property="og:description" content="Ever wonder what your photos are secretly saying about you? Learn the basics of image metadata and how to protect your privacy when sharing photos online.">
+    <meta property="og:image" content="https://onlyexif.com/social-preview.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What is Image Metadata? A Beginner's Guide to Understanding EXIF Data">
+    <meta name="twitter:description" content="Ever wonder what your photos are secretly saying about you? Learn the basics of image metadata and how to protect your privacy when sharing photos online.">
+    <meta name="twitter:image" content="https://onlyexif.com/social-preview.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="../styles.css" rel="stylesheet">
+    
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "What is Image Metadata? A Beginner's Guide to Understanding EXIF Data",
+        "description": "Ever wonder what your photos are secretly saying about you? Learn the basics of image metadata and how to protect your privacy when sharing photos online.",
+        "image": "https://onlyexif.com/social-preview.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OnlyEXIF",
+            "url": "https://onlyexif.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OnlyEXIF",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://onlyexif.com/logo.png"
+            }
+        },
+        "datePublished": "2024-02-12",
+        "dateModified": "2024-02-12",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://onlyexif.com/blog/posts/2024-02-12-what-is-image-metadata-beginners-guide.html"
+        },
+        "keywords": "EXIF data basics, what is metadata, photo metadata guide, image EXIF data, metadata privacy, digital photo metadata, metadata explanation, EXIF tutorial, photo privacy basics, metadata for beginners, image data guide, photo information, camera metadata, photo EXIF data, metadata 101"
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="https://onlyexif.com" class="nav-logo">
+                <img src="../assets/onlyexif-blog-logo.png" alt="OnlyEXIF Logo">
+            </a>
+            <div class="nav-links">
+                <a href="https://www.onlyexif.com/blog" class="btn btn-outline">Blog</a>
+                <a href="https://onlyexif.com" class="btn btn-primary">Open App</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="https://onlyexif.com" itemprop="item"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="https://onlyexif.com/blog" itemprop="item"><span itemprop="name">Blog</span></a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">What is Image Metadata?</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </nav>
+
+    <main class="blog-container">
+        <article class="blog-article">
+            <header class="article-header">
+                <a href="https://www.onlyexif.com/blog" class="btn btn-outline">
+                    ← Back to Blog
+                </a>
+                <h1 class="article-title">
+                    What is Image Metadata? A Beginner's Guide to Understanding EXIF Data
+                </h1>
+                <div class="article-meta">
+                    <time>February 12, 2024</time>
+                    <span>•</span>
+                    <span>3 min read</span>
+                    <span>•</span>
+                    <span>Beginner Guide</span>
+                </div>
+            </header>
+
+            <div class="content">
+                <p>
+                    Have you ever shared a photo online and wondered if you're accidentally sharing more than just the image? You're not alone. Every time you snap a picture with your phone or camera, it's like leaving digital fingerprints all over your photo. This hidden information is called metadata, and it's telling more about you than you might realize.
+                </p>
+
+                <h2>What's Metadata? Think of it as Your Photo's Diary</h2>
+                <p>
+                    Imagine if every photo you took came with a tiny, invisible diary. This diary (called EXIF data) keeps track of everything about that moment - where you were, what device you used, and even the exact time you took the picture. It's like your camera is secretly writting down notes about every photo you take.
+                </p>
+
+                <h2>The Surprising Things Your Photos Are Saying About You</h2>
+                <p>
+                    Your photos might be sharing:
+                </p>
+                <ul>
+                    <li>The exact location where you took the photo (down to the specific street!)</li>
+                    <li>What kind of phone or camera you own</li>
+                    <li>The date and time you took the picture</li>
+                    <li>What apps you used to edit the photo</li>
+                    <li>The settings your camera used (like brightness and exposure)</li>
+                </ul>
+
+                <h2>Why Should You Care?</h2>
+                <p>
+                    Think about it: would you want strangers knowing exactly where you live just because you posted a photo from your backyard? Or having someone figure out your daily routine from the timestamps on your gym selfies? This isn't about being paranoid - it's about being smart with your personal information.
+                </p>
+
+                <h2>Real-World Example: The Vacation Photo Mistake</h2>
+                <p>
+                    Sarah posted some vacation photos while she was away. What she didn't know was that the metadata in her photos showed her exact home address from pictures she took before leaving. She basically announced to the world: "Hey, my house is empty right now!" Not ideal, right?
+                </p>
+
+                <h2>How Can You Check What Your Photos Are Sharing?</h2>
+                <p>
+                    Here's where it gets simple. You don't need to be a tech genius to figure out what your photos are sharing. Just head over to OnlyEXIF.com and drop in any photo you're thinking of posting online. In seconds, you'll see exactly what information is hidden in your image.
+                </p>
+
+                <h2>Quick Tips for Safer Photo Sharing</h2>
+                <ul>
+                    <li>Always check your photos before posting them online</li>
+                    <li>Remove location data if you're sharing photos from private places</li>
+                    <li>Be extra careful with photos of kids or your home</li>
+                    <li>Consider turning off location services for your camera app</li>
+                    <li>Use a tool like OnlyEXIF before sharing important photos</li>
+                </ul>
+
+                <h2>The Easy Solution</h2>
+                <p>
+                    The good news? Protecting your privacy doesn't have to be complicated. OnlyEXIF makes it super easy to see and understand what your photos are sharing. Just upload your photo, and we'll show you everything that's hidden inside - no technical knowledge required.
+                </p>
+
+                <h2>Frequently Asked Questions</h2>
+                <p>
+                    <strong>Q: Do all photos have metadata?</strong><br>
+                    Most digital photos do, especially if they haven't been processed or stripped by social media platforms.
+                </p>
+                <p>
+                    <strong>Q: Can I remove metadata?</strong><br>
+                    Yes! Tools like OnlyEXIF can help you see and remove sensitive information before sharing.
+                </p>
+                <p>
+                    <strong>Q: Do social media sites remove metadata?</strong><br>
+                    Some do, but it's better to remove sensitive data yourself before uploading, just to be safe.
+                </p>
+
+                <h2>Take Control of Your Photo Privacy</h2>
+                <p>
+                    Understanding metadata doesn't require a degree in computer science. It just takes a little awareness and the right tools. Start by checking your next photo with OnlyEXIF - it's free, easy to use, and might just help you avoid sharing more than you meant to.
+                </p>
+
+                <h2>Understanding EXIF Metadata</h2>
+                <p>
+                    Modern operating systems provide basic EXIF viewing capabilities. In Windows, right-click an image and select "Properties," then navigate to "Details." On macOS, use the "Get Info" option in Finder. However, for comprehensive metadata analysis, specialized tools like <a href="https://onlyexif.com">OnlyEXIF</a> provide detailed insights and privacy recommendations.
+                </p>
+
+                <h2>Metadata Keywords</h2>
+                <p>
+                    Understanding EXIF metadata is crucial in today's digital world. While it serves valuable purposes for photographers and software applications, it's essential to manage this data consciously to protect your privacy. Use <a href="https://onlyexif.com">OnlyEXIF</a> to review and clean your images before sharing them online.
+                </p>
+
+                <h2>Instagram and Facebook Metadata Handling</h2>
+                <p>
+                    Instagram and Facebook have their own metadata handling policies. For example, Instagram removes location data from images by default, while Facebook has its own metadata handling policies.
+                </p>
+
+                <h2>X (formerly Twitter) Image Processing</h2>
+                <p>
+                    X (formerly Twitter) has its own image processing policies. For example, X removes location data from images by default.
+                </p>
+
+                <h2>Other Platform Considerations</h2>
+                <p>
+                    Other platforms like TikTok and Snapchat have their own metadata handling policies. For example, TikTok removes location data from images by default.
+                </p>
+            </div>
+
+            <footer class="article-footer">
+                <a href="https://www.onlyexif.com/blog" class="btn btn-primary">More articles</a>
+            </footer>
+        </article>
+    </main>
+
+    <div class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Protecting Your Privacy</h2>
+                <p>A free, open-source tool to help keep your personal data private</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://onlyexif.com" class="btn btn-primary">
+                        <svg class="social-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+                        </svg>
+                        Analyze Image
+                    </a>
+                    <a href="https://github.com/jon-lip/onlyexif" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-outline btn-outline-white">View Source</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>OnlyEXIF</h3>
+                    <p>Privacy-first metadata analysis</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://onlyexif.com">Home</a>
+                    <a href="https://www.onlyexif.com/blog">Blog</a>
+                    <a href="https://github.com/jon-lip/onlyexif">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 OnlyEXIF • Client-side processing only</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
