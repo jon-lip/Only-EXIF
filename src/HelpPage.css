@@ -1,0 +1,189 @@
+.help-page {
+  --help-bg: #ffffff;
+  --help-card: #ffffff;
+  --help-muted: #4b5563;
+  --help-text: #0f172a;
+  --help-accent: #2563eb;
+  background: var(--help-bg);
+  color: var(--help-text);
+  min-height: 100dvh;
+}
+
+.help-page a {
+  color: var(--help-accent);
+  text-decoration: none;
+}
+.help-page header .header-help {
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.help-page header .header-help:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+}
+
+/* Breadcrumb in the app header for Help page */
+.help-page header .breadcrumb {
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #e5e7eb;
+  opacity: 0.9;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.help-page header .breadcrumb-link {
+  color: #e5e7eb;
+}
+
+.help-page header .breadcrumb-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.help-page header .breadcrumb-sep {
+  opacity: 0.8;
+}
+
+.help-page header .breadcrumb-current {
+  opacity: 1;
+}
+
+.help-page a:hover {
+  text-decoration: underline;
+}
+
+.help-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--header-height) var(--side-padding) var(--landing-bottom-bar-height);
+}
+
+.help-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 0 12px;
+}
+
+.help-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.help-back:hover {
+  text-decoration: underline;
+}
+
+.help-back__chevron {
+  display: inline-block;
+}
+
+.help-brand {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: #0f172a;
+}
+
+.help-brand:hover {
+  text-decoration: none;
+}
+
+.help-title {
+  font-size: clamp(2.2rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  margin: 18px 0 10px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.help-subtitle {
+  color: #374151;
+  margin: 0 0 18px;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.help-card {
+  background: var(--help-card);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.help-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+}
+
+.help-card p,
+.help-card li {
+  color: var(--help-muted);
+  margin: 6px 0;
+}
+
+.help-card ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.help-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.help-footer {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: var(--help-muted);
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+.help-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.help-cta:hover {
+  background: #1a1a1a;
+  text-decoration: none;
+}
+
+.help-card--wide {
+  grid-column: 1 / -1;
+}
+
+.help-section-title {
+  margin: 10px 0 6px;
+  font-size: 0.98rem;
+}
+
+@media (min-width: 880px) {
+  .help-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

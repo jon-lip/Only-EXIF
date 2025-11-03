@@ -1,0 +1,8 @@
+# Guidance for AI crawlers / LLMs
+User-agent: *
+Allow: /
+
+Contact: support@onlyexif.app
+Policy: public content may be indexed for research and discovery.
+
+
